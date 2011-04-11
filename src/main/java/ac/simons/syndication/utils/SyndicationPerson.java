@@ -33,6 +33,8 @@
  */
 package ac.simons.syndication.utils;
 
+import static ac.simons.utils.StringUtils.nvl;
+
 import com.sun.syndication.feed.atom.Person;
 
 /**
@@ -46,17 +48,17 @@ public class SyndicationPerson {
 	}
 
 	public SyndicationPerson withName(String name) {
-		person.setName(name);
+		person.setName(nvl(name, null));
 		return this;
 	}
 
-	public SyndicationPerson withUrl(String url) {
-		person.setUrl(url);
+	public SyndicationPerson withUrl(String url) {		
+		person.setUrl(nvl(url, null));
 		return this;
 	}
 
 	public SyndicationPerson withEmail(String email) {
-		person.setEmail(email);
+		person.setEmail(nvl(email, null));
 		return this;
 	}	
 }
