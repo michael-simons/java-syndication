@@ -61,7 +61,12 @@ public class SyndicationLink {
 	}
 
 	public SyndicationLink withTitle(String title) {
-		link.setTitle(title);
+		link.setTitle(title);		
 		return this;
 	}	
+	
+	public SyndicationLink withLength(final long length) {
+		link.setLength(length);
+		return this;		
+	}
 }
