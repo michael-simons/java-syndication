@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.michael-simons</groupId>
 	<artifactId>java-syndication</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>java-syndication</name>
 	<description>Modules and utilities to use in ROME</description>
 	<build>
@@ -48,10 +48,10 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>eu.michael-simons</groupId>
-			<artifactId>java-utils</artifactId>
-			<version>[0.0.1-SNAPSHOT,)</version>
-		</dependency>	
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
 		<dependency>
 			<groupId>org.jdom</groupId>
 			<artifactId>jdom</artifactId>

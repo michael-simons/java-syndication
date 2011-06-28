@@ -33,7 +33,7 @@
  */
 package ac.simons.syndication.modules.atom;
 
-import static ac.simons.utils.StringUtils.isBlank;
+import static org.apache.commons.lang.StringUtils.isBlank;
 
 import java.util.Arrays;
 import java.util.Collections;
