@@ -33,7 +33,7 @@
  */
 package ac.simons.syndication.utils;
 
-import static org.apache.commons.lang.StringUtils.defaultIfBlank;
+import static org.apache.commons.lang3.StringUtils.defaultIfBlank;
 
 import com.sun.syndication.feed.atom.Person;
 
