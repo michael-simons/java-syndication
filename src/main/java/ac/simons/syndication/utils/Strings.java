@@ -3,7 +3,7 @@
  * and released under The BSD License
  * http://www.opensource.org/licenses/bsd-license.php
  *
- * Copyright (c) 2010, Michael Simons
+ * Copyright (c) 2015, Michael Simons
  * All rights reserved.
  *
  * Redistribution  and  use  in  source   and  binary  forms,  with  or   without
@@ -33,34 +33,18 @@
  */
 package ac.simons.syndication.utils;
 
-import static ac.simons.syndication.utils.Strings.isEmpty;
-
-import java.util.Optional;
-
-import com.rometools.rome.feed.atom.Person;
-
 /**
- * @author Michael J. Simons
+ * @author Michael J. Simons, 2015-04-08
  */
-public class SyndicationPerson {
-	private final Person person = new Person();
-
-	public Person getPerson() {
-		return person;
+public final class Strings {
+	private Strings() {
 	}
-
-	public SyndicationPerson withName(String name) {		
-		person.setName(Optional.ofNullable(name).filter(s -> !isEmpty(s)).orElse(null));
-		return this;
+	
+	/**
+	 * @param value
+	 * @return True if <code>value</code> is null or whitespace only or length = 0
+	 */
+	public static boolean isEmpty(final String value) {
+		return value == null || value.trim().isEmpty();
 	}
-
-	public SyndicationPerson withUrl(String url) {		
-		person.setUrl(Optional.ofNullable(url).filter(s -> !isEmpty(s)).orElse(null));
-		return this;
-	}
-
-	public SyndicationPerson withEmail(String email) {
-		person.setEmail(Optional.ofNullable(email).filter(s -> !isEmpty(s)).orElse(null));
-		return this;
-	}	
 }

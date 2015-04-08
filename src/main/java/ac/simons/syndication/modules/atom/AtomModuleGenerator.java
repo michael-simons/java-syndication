@@ -33,18 +33,18 @@
  */
 package ac.simons.syndication.modules.atom;
 
-import static org.apache.commons.lang3.StringUtils.isBlank;
+import static ac.simons.syndication.utils.Strings.isEmpty;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.jdom2.Attribute;
 import org.jdom2.Element;
 import org.jdom2.Namespace;
 
-import com.rometools.rome.feed.atom.Link;
 import com.rometools.rome.feed.module.Module;
 import com.rometools.rome.io.ModuleGenerator;
 
@@ -71,23 +71,28 @@ public class AtomModuleGenerator implements ModuleGenerator {
 		this.addLinks(element, content);
 	}
 	
-	private void addLinks(final Element parent, final AtomContent content) {
-		for(Link link : content.getLinks()) {
-			final Element e = new Element("link", AtomModule.ATOM_NS);
-
-			if(!isBlank(link.getRel()))
-				e.setAttribute( new Attribute("rel", link.getRel()));
-			if(!isBlank(link.getType()))
-				e.setAttribute(new Attribute("type", link.getType()));
-			if(!isBlank(link.getHref()))
-				e.setAttribute(new Attribute("href", link.getHref()));
-			if(!isBlank(link.getHreflang()))
-				e.setAttribute(new Attribute("hreflang", link.getHreflang()));
-			if(!isBlank(link.getTitle()))
-				e.setAttribute( new Attribute("title", link.getTitle()));
-			if(link.getLength() != 0) 
-				e.setAttribute(new Attribute("length", Long.toString(link.getLength())));
-			parent.addContent(e);
-		}
+	private void addLinks(final Element parent, final AtomContent content) {		
+		parent.addContent(
+			content
+				.getLinks().stream()
+				.map(link -> {
+					final Element e = new Element("link", AtomModule.ATOM_NS);
+		
+					if(!isEmpty(link.getRel()))
+						e.setAttribute( new Attribute("rel", link.getRel()));
+					if(!isEmpty(link.getType()))
+						e.setAttribute(new Attribute("type", link.getType()));
+					if(!isEmpty(link.getHref()))
+						e.setAttribute(new Attribute("href", link.getHref()));
+					if(!isEmpty(link.getHreflang()))
+						e.setAttribute(new Attribute("hreflang", link.getHreflang()));
+					if(!isEmpty(link.getTitle()))
+						e.setAttribute( new Attribute("title", link.getTitle()));
+					if(link.getLength() != 0) 
+						e.setAttribute(new Attribute("length", Long.toString(link.getLength())));
+					
+					return e;
+			}).collect(Collectors.toList())
+		);		
 	}	
 }
