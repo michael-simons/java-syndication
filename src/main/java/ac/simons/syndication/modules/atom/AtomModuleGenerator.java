@@ -40,13 +40,13 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.jdom.Attribute;
-import org.jdom.Element;
-import org.jdom.Namespace;
+import org.jdom2.Attribute;
+import org.jdom2.Element;
+import org.jdom2.Namespace;
 
-import com.sun.syndication.feed.atom.Link;
-import com.sun.syndication.feed.module.Module;
-import com.sun.syndication.io.ModuleGenerator;
+import com.rometools.rome.feed.atom.Link;
+import com.rometools.rome.feed.module.Module;
+import com.rometools.rome.io.ModuleGenerator;
 
 /**
  * @author Michael J. Simons
@@ -58,10 +58,9 @@ public class AtomModuleGenerator implements ModuleGenerator {
 	public String getNamespaceUri() {
 		return AtomModule.ATOM_10_URI;
 	}
-
-	@SuppressWarnings("rawtypes")
+	
 	@Override
-	public Set getNamespaces() {
+	public Set<Namespace> getNamespaces() {
 		return namespaces;
 	}
 

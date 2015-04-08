@@ -33,10 +33,10 @@
  */
 package ac.simons.syndication.utils;
 
-import org.jdom.CDATA;
-import org.jdom.Element;
+import org.jdom2.CDATA;
+import org.jdom2.Element;
 
-import com.sun.syndication.feed.rss.Description;
+import com.rometools.rome.feed.rss.Description;
 
 /**
  * @author Michael J. Simons

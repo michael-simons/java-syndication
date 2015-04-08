@@ -33,7 +33,7 @@
  */
 package ac.simons.syndication.utils;
 
-import com.sun.syndication.feed.rss.Guid;
+import com.rometools.rome.feed.rss.Guid;
 
 /**
  * @author Michael J. Simons

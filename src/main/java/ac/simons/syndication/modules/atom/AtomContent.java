@@ -37,7 +37,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.syndication.feed.atom.Link;
+import com.rometools.rome.feed.atom.Link;
 
 /**
  * Represents valid Atom Content

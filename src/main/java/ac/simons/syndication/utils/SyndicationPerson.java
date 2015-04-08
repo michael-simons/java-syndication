@@ -35,7 +35,7 @@ package ac.simons.syndication.utils;
 
 import static org.apache.commons.lang3.StringUtils.defaultIfBlank;
 
-import com.sun.syndication.feed.atom.Person;
+import com.rometools.rome.feed.atom.Person;
 
 /**
  * @author Michael J. Simons

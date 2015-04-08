@@ -33,9 +33,9 @@
  */
 package ac.simons.syndication.modules.atom;
 
-import org.jdom.Namespace;
+import org.jdom2.Namespace;
 
-import com.sun.syndication.feed.module.Module;
+import com.rometools.rome.feed.module.Module;
 
 /**
  * This defines an Atom Module to be included into a RSS 2.0 feed
