@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.michael-simons</groupId>
 	<artifactId>java-syndication</artifactId>
-	<version>0.1.3</version>
+	<version>0.1.4-SNAPSHOT</version>
 	<name>java-syndication</name>
 	<description>Modules and utilities to use in ROME</description>
 	<url>http://info.michael-simons.eu/2011/11/28/java-stuff/</url>
