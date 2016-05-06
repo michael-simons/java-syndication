@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<prerequisites>
@@ -8,7 +7,7 @@
 
 	<groupId>eu.michael-simons</groupId>
 	<artifactId>java-syndication</artifactId>
-	<version>0.1.4-SNAPSHOT</version>
+	<version>0.1.4</version>
 	<name>java-syndication</name>
 	<description>Modules and utilities to use in ROME</description>
 	<url>http://info.michael-simons.eu/2011/11/28/java-stuff/</url>
@@ -28,7 +27,7 @@
 		<connection>scm:git:git@github.com:michael-simons/java-syndication.git</connection>
 		<developerConnection>scm:git:git@github.com:michael-simons/java-syndication.git</developerConnection>
 		<url>https://github.com/michael-simons/java-syndication</url>
-		<tag>HEAD</tag>
+		<tag>0.1.4</tag>
 	</scm>
 
 	<packaging>jar</packaging>
