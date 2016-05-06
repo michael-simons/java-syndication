@@ -86,6 +86,7 @@
 					<target>1.8</target>
 					<source>1.8</source>
 					<encoding>UTF-8</encoding>
+                    <showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -141,7 +142,7 @@
 		<dependency>
 			<groupId>com.rometools</groupId>
 			<artifactId>rome</artifactId>
-			<version>1.5.1</version>
+			<version>1.6.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>jdom</groupId>
