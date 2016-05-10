@@ -1,9 +1,9 @@
-/**
+/*
  * Created by Michael Simons, michael-simons.eu
  * and released under The BSD License
  * http://www.opensource.org/licenses/bsd-license.php
  *
- * Copyright (c) 2015, Michael Simons
+ * Copyright (c) 2015-2016, Michael Simons
  * All rights reserved.
  *
  * Redistribution  and  use  in  source   and  binary  forms,  with  or   without
@@ -41,7 +41,7 @@ public final class Strings {
 	}
 	
 	/**
-	 * @param value
+	 * @param value The value to check for emptiness
 	 * @return True if <code>value</code> is null or whitespace only or length = 0
 	 */
 	public static boolean isEmpty(final String value) {
