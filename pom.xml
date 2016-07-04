@@ -7,7 +7,7 @@
 
 	<groupId>eu.michael-simons</groupId>
 	<artifactId>java-syndication</artifactId>
-	<version>0.2.2</version>
+	<version>0.2.3-SNAPSHOT</version>
 	<name>java-syndication</name>
 	<description>Modules and utilities to use in ROME</description>
 	<url>http://info.michael-simons.eu/2011/11/28/java-stuff/</url>
@@ -27,7 +27,7 @@
 		<connection>scm:git:git@github.com:michael-simons/java-syndication.git</connection>
 		<developerConnection>scm:git:git@github.com:michael-simons/java-syndication.git</developerConnection>
 		<url>https://github.com/michael-simons/java-syndication</url>
-		<tag>0.2.2</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<packaging>jar</packaging>
